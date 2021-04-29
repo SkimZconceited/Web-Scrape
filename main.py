@@ -1,8 +1,8 @@
 from bs4 import BeautifulSoup
 import requests
 
-def get_page(page = 0):
-    url = f"https://clutch.co/ke/it-services?page={page}"
+def get_page(pages = 0):
+    url = f"https://clutch.co/ke/it-services?page={pages}"
     company_names(url)
 
 

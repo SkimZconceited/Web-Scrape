@@ -1,13 +1,14 @@
 from bs4 import BeautifulSoup
 import requests
+from selenium import webdriver
 
-def get_page(pages = 0):
-    url = f"https://clutch.co/ke/it-services?page={pages}"
-    company_names(url)
+def get_page():
+    url = f"https://tms.tpf.go.tz"
+    plate_names(url)
 
 
 
-def company_names(url):
+def plate_names(url):
     response = requests.get(url)
 
     html = response.content
@@ -29,4 +30,4 @@ def company_names(url):
 if __name__ == '__main__':
     for index, x in enumerate(range(0, 3)):
         get_page(x)
-    company_names()
+        plate_names()

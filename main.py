@@ -29,6 +29,12 @@ try:
     for trow in trows:
         print(trow.text)
 
+finally:
+    driver.quit()
+
+
+
+
 
     #     theads = trow.find_elements_by_tag_name("th")
     #     for thead in theads:
@@ -50,10 +56,6 @@ try:
         #     print(tdets[n].text)
 
         #     n = n+1
-
-finally:
-    driver.quit()
-
 
 
 # ref = driver.find_element_by_tag_name("th")

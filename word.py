@@ -1,0 +1,1 @@
+#file is on collecting the results of scraping to a word document.

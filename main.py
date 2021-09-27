@@ -14,6 +14,7 @@ num = "T 583 DEB"
 driver.get("https://tms.tpf.go.tz/")
 print(driver.title)
 
+
 search = driver.find_element_by_name("vehicle")
 search.send_keys(num)
 search.send_keys(Keys.RETURN)

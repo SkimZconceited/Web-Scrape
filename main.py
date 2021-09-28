@@ -41,23 +41,6 @@ finally:
     #     for thead in theads:
     #         print(thead.text)
 
-    # for trow in trows:
-    #     tdets = trow.find_elements_by_tag_name("td")
-    #     for tdet in tdets:
-    #         print(tdets.text)
-               
-        
-
-        # n = 0
-        # while n < 12:
-        #     # m = n
-        #     # print(m)
-
-        #     print(thead[n].text)
-        #     print(tdets[n].text)
-
-        #     n = n+1
-
 
 # ref = driver.find_element_by_tag_name("th")
 # print(ref.text)
@@ -66,4 +49,3 @@ finally:
 # print(val.text)
 
 # time.sleep(5)
-# driver.quit()

@@ -9,7 +9,7 @@ PATH = "C:\Program Files (x86)\chromedriver.exe"
 
 driver = webdriver.Chrome(PATH)
 
-num = "T 583 DEB"
+num = "T 580 DEB"
 
 driver.get("https://tms.tpf.go.tz/")
 print(driver.title)

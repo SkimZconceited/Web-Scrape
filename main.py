@@ -9,7 +9,7 @@ PATH = "C:\Program Files (x86)\chromedriver.exe"
 
 driver = webdriver.Chrome(PATH)
 
-num = "T 580 DEB"
+num = "T 583 DEB"
 
 driver.get("https://tms.tpf.go.tz/")
 print(driver.title)
@@ -40,12 +40,3 @@ finally:
     #     theads = trow.find_elements_by_tag_name("th")
     #     for thead in theads:
     #         print(thead.text)
-
-
-# ref = driver.find_element_by_tag_name("th")
-# print(ref.text)
-
-# val = driver.find_element_by_tag_name("td")
-# print(val.text)
-
-# time.sleep(5)

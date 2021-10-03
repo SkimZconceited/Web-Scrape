@@ -33,10 +33,5 @@ try:
 finally:
     driver.quit()
 
-
-
-
-
-    #     theads = trow.find_elements_by_tag_name("th")
-    #     for thead in theads:
-    #         print(thead.text)
+# I just have to add a list that enters automatically after finishing one object
+# Create a word document after the results

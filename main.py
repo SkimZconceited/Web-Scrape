@@ -37,3 +37,4 @@ for num in nums:
 
 # I just have to add a list that enters automatically after finishing one object
 # Create a word document after the results
+# stalled for a long time now I have to keep going.

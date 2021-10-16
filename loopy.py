@@ -1,11 +1,6 @@
-plates = ["q", "w", "e", "r", "t", "y"]
+from main import automatic
 
+plates = ["T 580 DEB", "T 583 DEB", "T 672 DJT"]
 
-def loop(x):
-    plates = x
-    for plate in plates:
-        print(plate)
-
-plt = ["qwe", "rty", "uio", "asd"]
-
-loop(plt)
+for plate in plates:
+    automatic(plate)

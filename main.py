@@ -24,7 +24,7 @@ def automatic(nums):
         # tbdy = WebDriverWait(driver, 15).until(
         #     EC.presence_of_element_located((By.TAG_NAME, "tbody"))   
         # )
-        #This was the wait progress of 
+        #This was the wait progress of the EC for automation
         
         tbdy = driver.find_element_by_tag_name("tbody")
 

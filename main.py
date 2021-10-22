@@ -24,6 +24,7 @@ def automatic(nums):
         # tbdy = WebDriverWait(driver, 15).until(
         #     EC.presence_of_element_located((By.TAG_NAME, "tbody"))   
         # )
+        #This was the wait progress of 
         
         tbdy = driver.find_element_by_tag_name("tbody")
 
@@ -38,3 +39,4 @@ def automatic(nums):
 # I just have to add a list that enters automatically after finishing one object
 # Create a word document after the results
 # stalled for a long time now I have to keep going.
+#

@@ -1,42 +1,31 @@
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-import time
+from bs4 import BeautifulSoup
+import requests
 
-PATH = "C:\Program Files (x86)\chromedriver.exe"
-
-driver = webdriver.Chrome(PATH)
+# link = 'https://tms.tpf.go.tz/'
+link2 = 'https://www.selenium.dev/'
 
 
+response = requests.get('https://tms.tpf.go.tz/')
+
+
+if response.status_code == 200:
+    link = response.text
+    soup = BeautifulSoup(link, 'lxml')
+    search = soup.find('h1', class_ = 'header_font_t').text
+    print(search)
+else:
+    print(f'Error with retrieving the webpage. Status code: {response.status_code}')
+    
+
+
+# with open('Plate.txt', 'r') as plate_numbers:
+#     plate_num = plate_numbers.read()
+#     print(plate_num)
+#     soup = BeautifulSoup(link2, 'lxml')
+#     print(soup.prettify())
 
 def automatic(nums):
-    driver.get("https://tms.tpf.go.tz/")
-    print(driver.title)
+    # print(nums)
+    pass
 
-    search = driver.find_element_by_name("vehicle")
-    search.send_keys(nums)
-    search.send_keys(Keys.RETURN)
-
-
-    try:
-        # tbdy = WebDriverWait(driver, 15).until(
-        #     EC.presence_of_element_located((By.TAG_NAME, "tbody"))   
-        # )
-        #This was the wait progress of the EC for automation
-        
-        tbdy = driver.find_element_by_tag_name("tbody")
-
-        trows = tbdy.find_elements_by_tag_name("tr")
-        
-        for trow in trows:
-            print(trow.text)
-
-    finally:
-        driver.quit()
-
-# I just have to add a list that enters automatically after finishing one object
-# Create a word document after the results
-# stalled for a long time now I have to keep going.
-#
+automatic('T580DEB')
